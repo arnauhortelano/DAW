@@ -1,0 +1,33 @@
+div{
+    margin-top:2%;
+    margin-left:20%;
+    margin-right:20%;
+}
+body{
+    background-color:rgb(205,224,245);
+    font-family:arial;
+}
+table{
+    width:750px;
+}
+table, td, tr{
+    border:1px solid black;
+    padding:5px;
+    border-collapse:collapse;
+    background-color:rgb(182,210,241);
+    text-align:center;
+}
+#cap{
+    font-weight:bold;
+    background-color:rgb(33,103,180);
+    color:white;
+}
+textarea{
+    width:300px;
+    height:150px;
+    background-color:rgb(221,234,249);
+}
+
+td{
+    width:300px;
+}

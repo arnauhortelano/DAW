@@ -1,0 +1,305 @@
+<html>
+    <head>
+            <link rel="stylesheet" href="javascript.css"/>
+            <title>Activitat 1.3: Estudi bàsic de JS</title>
+    </head>
+    <body>
+        <div>
+        <table>
+        <tr> <h1>Activitat 1.3: Estudi bàsic de JS </h1></tr>
+        <tr>
+            <td id="cap">Concepte</td>
+            <td id="cap">Codi font</td>
+            <td id="cap">Exemple</td>
+        </tr>
+        <tr>
+            <td>Variables </td>
+            <td>
+                <textarea>
+<script>
+  var vari1 = 1;
+  var vari2 = 2;
+    document.write("Variable nº 1 = "+vari1+"<br />");
+    document.write("Variable nº 2 = "+vari2+"<br />");
+    document.write("Variable nº 1 + 2 = "+vari1+vari2+"<br />");
+    document.write("Variable nº (1 + 2) = "+(vari1+vari2)+"<br />");
+</script>   
+                </textarea>
+            </td>
+            <td>
+                <script>
+                    var vari1 = 1;
+                    var vari2 = 2;
+                    document.write("Variable nº 1 = "+vari1+"<br />");
+                    document.write("Variable nº 2 = "+vari2+"<br />");
+                    document.write("Variable nº 1 + 2 = "+vari1+vari2+"<br />");
+                    document.write("Variable nº (1 + 2) = "+(vari1+vari2)+"<br />");
+                </script>   
+            </td>
+        </tr>
+        <tr>
+            <td>Data Types </td>
+            <td>
+                <textarea>
+<script>
+  var vari1 = 10;
+  document.write(vari1+"<br />");
+  var vari2 = 0.20;
+  document.write(vari2+"<br />");
+  var vari3 = "Arnau";
+  document.write(vari3+"<br />");
+  var vari4 = false;
+  document.write(vari4+"<br />");
+</script> 
+                </textarea>
+            </td>
+            <td>
+                <script>
+                    var vari1 = 10;
+                    document.write("Nombre enter: "+vari1+"<br />");
+                    var vari2 = 0.20;
+                    document.write("Nombre decimal: "+vari2+"<br />");
+                    var vari3 = "Arnau";
+                    document.write("Cadena: "+vari3+"<br />");
+                    var vari4 = false;
+                    document.write("Booleana: "+vari4+"<br />");
+                </script>   
+            </td>
+        </tr>
+        <tr>
+            <td>Objectes </td>
+            <td>
+                <textarea>
+<script>
+  var alumne = 
+  {nom:"Pol",
+  cognoms:"Pou Pascual",
+  anys:12,
+  aula:"2A"};
+                    
+  document.getElementById("alumne").innerHTML ="En "+ 
+  alumne.nom + " te " + alumne.anys + " anys, i va a la classe "+alumne.aula+".";
+</script>
+                </textarea>  
+            </td>
+            <td>
+                <p>Objecte Alumne: </p>
+                </br>
+                <p id="alumne"></p>
+                <script>
+                    var alumne = 
+                    {nom:"Pol",
+                    cognoms:"Pou Pascual",
+                    anys:12,
+                    aula:"2A"};
+                    
+                    document.getElementById("alumne").innerHTML ="En "+ 
+                    alumne.nom + " te " + alumne.anys + " anys, i va a la classe "+alumne.aula+".";
+                </script>   
+            </td>
+        </tr>
+        <tr>
+            <td>Funcions </td>
+            <td>
+                <textarea>
+<script>
+  function funcio(a, b) {
+  var c= a + b;
+  return "a + b = "+c;}
+  document.getElementById("funcio").innerHTML = funcio(4, 3);
+</script>
+                </textarea>
+            </td>
+            <td>
+                <p id="funcio"></p>
+                <script>
+                    function funcio(a, b) {
+                    var c= a + b;
+                    return "a + b = "+c;}
+                    document.getElementById("funcio").innerHTML = funcio(4, 3);
+                </script>
+            </td>
+        </tr>
+    <tr>
+            <td>Operadors </td>
+            <td>
+                <textarea>
+<script>
+  var a = 5;
+  var b = --a;
+  var c = 5;
+  c += b;
+  
+  document.write("A = "+a+"</br>");
+  document.write("B = "+b+"</br>"); 
+  document.write("C = "+c+"</br>");                   
+</script>
+                </textarea>
+            </td>
+            <td>
+                <script>
+                    var a = 5;
+                    var b = --a;
+                    var c = 5;
+                    c += b;
+                    document.write("A = "+a+"</br>");
+                    document.write("B = "+b+"</br>"); 
+                    document.write("C = "+c+"</br>");                   
+                </script>
+            </td>
+
+        </tr>
+        <tr>
+            <td>Comparadors </td>
+            <td>
+                <textarea>
+<script>
+  var pes=95;
+        
+  if (pes>75 & pes<90 ){
+   document.write("pes>75 & pes<90");
+   }
+  if (pes>75 | pes<75){
+   document.write("pes>75 | pes<75");
+  }
+</script>
+                </textarea>
+            </td>
+            <td>
+              <script>
+                  var pes=80;
+                        
+                  if (pes>75 & pes<90 ){
+                   document.write("Pes mes gran de 75 i (&) més petit de 90 </br></br>");
+                   }
+                  if (pes>75 | pes<90){
+                   document.write("Pes mes gran de 75 o bé (|) més petit de 90 </br>");
+                  }
+                </script>
+            </td>
+
+        </tr>
+        <tr>
+            <td>Condicions </td>
+            <td>
+                <textarea>
+<script>
+  var pes=95;
+        
+  if (pes>75 & pes<90 ){
+   document.write("Pes adecuat");
+  }else{
+   document.write("Pes fora del rang");
+  }
+</script>
+                </textarea>
+            </td>
+            <td>
+                <script>
+                    var pes=90;
+                    
+                    if (pes>75 & pes<85 ){
+                        document.write("Pes adecuat");
+                    }else{
+                        document.write("Pes fora del rang");
+                    }
+                </script>
+            </td>
+
+        </tr>
+         <tr>
+            <td>Switch </td>
+            <td>
+                <textarea>
+<script>
+var num=2;
+            
+ switch (num){
+  case 0:
+   document.write("cas nº "+num);
+  break;
+  case 1:
+   document.write("cas nº "+num);
+  break;
+  case 2:
+    document.write("cas nº "+num);
+  break }
+</script>
+                </textarea>
+            </td>
+            <td>
+              <script>
+                var num=2;
+            
+                switch (num){
+                    case 0:
+                        document.write("cas nº "+num);
+                        break;
+                    case 1:
+                        document.write("cas nº "+num);
+                        break;
+                    case 2:
+                        document.write("cas nº "+num);
+                        break;
+                    }
+                </script>
+            </td>
+
+        </tr>
+        <tr>
+            <td>For </td>
+            <td>
+                <textarea>
+<script>
+alumne = ["marc", "arnau", "ferran", "oriol"];
+
+for (var i = 0; i < cars.length; i++) {
+    "" += alumne[i] + "<br>";
+    document.write(alumne[i]);
+}
+
+        </script>
+                        </textarea>
+                    </td>
+                    <td>
+                       <p> Recorrer l'Array alumne: </p>
+                        <script>
+                            alumne = ["marc", "arnau", "ferran", "oriol"];
+
+                            for (var i = 0; i < alumne.length; i++) {
+                                document.write(alumne[i]+"</br>");
+                            }
+                        </script>
+                    </td>
+            </tr>
+             <tr>
+            <td>While</td>
+            <td>
+                <textarea>
+<script>
+voltes=0;
+
+While (voltes<=5){
+    voltes++;
+    document.write("Volta "+voltes);
+}
+
+</script>
+                        </textarea>
+                    </td>
+                    <td>
+                      <script>
+                        voltes=1;
+
+                        while (voltes<=5){
+                            document.write("Volta "+voltes+"</br>");
+                            voltes++;
+                        }
+
+                        </script>
+                    </td>
+            </tr>
+        </table>
+        </div>
+    </body>
+</html>
